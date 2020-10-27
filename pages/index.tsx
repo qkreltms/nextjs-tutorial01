@@ -66,7 +66,7 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 // 페이지 접근시,
-// 데이터가 캐시 됨
+// 데이터가 캐시 되지 않음
 //
 // pre-rendering
 // export async function getServerSideProps(context) {
