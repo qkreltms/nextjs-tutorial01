@@ -58,6 +58,7 @@ In production, getStaticProps runs at build time.
 // https://nextjs.org/learn/basics/data-fetching/with-data
 // https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation
 export const getStaticProps: GetStaticProps = async () => {
+  console.log("@@@@@@@@@@@@@@@@@@@@@@test@@@@@@@@@@@@@@@@@@")
   const allPostsData = getSortedPostsData();
   return {
     props: {
@@ -65,6 +66,12 @@ export const getStaticProps: GetStaticProps = async () => {
     },
   };
 };
+
+/**
+ * 아래의 api는 동적 페이지 사용시 url의 이름을 정하게 함
+ */
+// export const  getStaticPaths = async () => {}
+
 // 페이지 접근시,
 // 데이터가 캐시 되지 않음
 //
